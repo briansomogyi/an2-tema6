@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Layout</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100">
+    <div class="flex flex-col md:flex-row">
+        <!-- Sidebar -->
+        <div class="bg-blue-800 text-white w-full md:w-1/4 p-4">
+            <h2 class="text-2xl font-bold mb-4">Sidebar</h2>
+            <ul>
+                <li class="mb-2"><a href="#" class="hover:underline">Calendar</a></li>
+                <li class="mb-2"><a href="#" class="hover:underline">Objects</a></li>
+                <li class="mb-2"><a href="#" class="hover:underline">My account</a></li>
+                <li class="mb-2"><a href="#" class="hover:underline">Logout</a></li>
+            </ul>
+        </div>
+        <!-- Main Content -->
+        <div class="flex-1 p-4">
+            <header class="flex justify-between items-center mb-4">
+                <h1 class="text-3xl font-bold">Logo</h1>
+                <input type="text" placeholder="Search..." class="border p-2 rounded">
+            </header>
+            <div class="bg-white p-4 rounded shadow">
+                <h2 class="text-xl font-bold mb-2">October 2021</h2>
+                <p class="mb-4">Placeholder text for the main content area.</p>
+                <p class="mb-4">Assignment description in Romanian:</p>
+                <p class="mb-4">Tema 6 - Să se reproducă în TailwindCSS</p>
+                <p class="mb-4">Versiunea Desktop</p>
+                <p class="mb-4">Termen limită 08 noiembrie 2024</p>
+                <p class="mb-4">Tema să fie pusă ca link la <a href="https://codesandbox.io"
+                        class="text-blue-500 hover:underline">https://codesandbox.io</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
